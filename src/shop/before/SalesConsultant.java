@@ -1,4 +1,4 @@
-package shop;
+package shop.before;
 
 public class SalesConsultant {
 

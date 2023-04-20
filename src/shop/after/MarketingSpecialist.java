@@ -1,4 +1,4 @@
-package shop;
+package shop.after;
 
 public class MarketingSpecialist {
 

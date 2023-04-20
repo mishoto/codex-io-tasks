@@ -8,8 +8,7 @@ public class GardenWithCarrots {
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                if (matrix[i][j] == 1) { // only if the cell is a land
-                    // we have found an island
+                if (matrix[i][j] == 1) {
                     totalGroups++;
                     visitGroupDFS(matrix, i, j);
                 }
@@ -19,10 +18,12 @@ public class GardenWithCarrots {
     }
 
     private static void visitGroupDFS(int[][] matrix, int x, int y) {
-        if (x < 0 || x >= matrix.length || y < 0 || y >= matrix[0].length)
-            return; // return, if it is not a valid cell
-        if (matrix[x][y] == 0)
-            return; // return, if it is a carrot cell
+        if (x < 0 || x >= matrix.length || y < 0 || y >= matrix[0].length){
+            return; // -> if it is not a valid cell
+        }
+        if (matrix[x][y] == 0){
+            return; // -> if it is a carrot cell
+        }
 
         matrix[x][y] = 0; // mark the cell visited by making it empty cell
 
