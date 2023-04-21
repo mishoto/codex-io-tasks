@@ -17,6 +17,11 @@ public class Shop {
     // missing generic type or raw use of List interface
     private List workers = new ArrayList();
 
+    /*
+     when mutating the list of workers it is a better idea to return a new/updated list;
+     using List<> as a return type will be more concise, since can allow other methods to use workers list
+     */
+
     public void addWorker(Object worker) {
         this.workers.add(worker);
     }
