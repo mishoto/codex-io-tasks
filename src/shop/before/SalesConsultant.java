@@ -2,6 +2,7 @@ package shop.before;
 
 public class SalesConsultant {
 
+    //field can be final
     private  Shop workingShop;
     private double earnedMoney;
 
